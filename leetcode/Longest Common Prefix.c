@@ -20,7 +20,7 @@ char* longestCommonPrefix(char** strs, int strsSize)
     int i,j;
     char *p;
     if(strsSize<=0)
-        return NULL;
+        return "";
     p=strs[0];
     for(i=1;i<strsSize;i++)
     {
