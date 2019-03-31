@@ -22,14 +22,14 @@ char* longestCommonPrefix(char** strs, int strsSize)
     if(strsSize<=0)
         return "";
     p=strs[0];
-    for(i=1;i<strsSize;i++)
+    for(i=1;i<strsSize;i++)//从第一个字符串开始
     {
         j=0;
-        while(p[j] && strs[i][j] && p[j]==strs[i][j])
+        while(p[j] && strs[i][j] && p[j]==strs[i][j])//与第0个字符串的所有字符依次比较
         {
             j++;
         }
-        p[j]='\0';
+        p[j]='\0';//截短第0个字符串
     }
     return p;
 }
